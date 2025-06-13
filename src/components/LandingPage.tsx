@@ -3,6 +3,7 @@ import "./LandingPage.css";
 import poweringUp from '../assets/imgs/poweringUp.png'
 import { cardData } from "../components/CardSection";
 import { t } from '../i18n';
+import ButtonWithEffect from "./ButtonWithEffect";
 
 
 const LandingPage: React.FC = () => {
@@ -28,7 +29,9 @@ const LandingPage: React.FC = () => {
         <p className="hero-subtext">
           {t('landingSubtitle')}
         </p>
-        <button className="cta-button">{t('buttonLabel')}</button>
+
+        {/* POW button */}
+        <ButtonWithEffect t={t} />
       </section>
 
       {/* Cards Section */}
